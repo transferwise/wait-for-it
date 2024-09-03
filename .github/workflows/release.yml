@@ -79,19 +79,19 @@ jobs:
           fetch-depth: 0
 
       - name: Download Linux Artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: wait-for-it
           path: ./bin
       
       - name: Download Windows Artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: wait-for-it_windows
           path: ./bin
       
       - name: Download MacOS Artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: wait-for-it_mac
           path: ./bin
